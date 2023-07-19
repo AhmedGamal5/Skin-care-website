@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.logo img {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.right .list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.right .list :hover {
+  color: rgb(187, 17, 17);
+}
+.search {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  height: 30%;
+  width: 110px;
+  padding: 4px;
+}
+
+.cart {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  .right {
+    position: absolute;
+    right: 32px;
+    z-index: 9999;
+    background-color: white;
+    color: var(--black);
+    border-radius: 5px;
+    flex-direction: column;
+    padding: 16px;
+  }
+  .list {
+    flex-direction: column;
+    margin-left: -32px;
+    display: none;
+  }
+  .menue-icon {
+    display: block;
+  }
+  .search {
+    display: none;
+  }
+}
+@media screen and (max-width: 856px) {
+  .search {
+    display: none;
+  }
+  .right {
+    gap: 1rem;
+  }
+}

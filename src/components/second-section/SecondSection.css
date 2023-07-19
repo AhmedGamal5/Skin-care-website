@@ -1,0 +1,78 @@
+.sec-section {
+  position: relative;
+}
+.sec-section .swiper {
+  width: 70%;
+  height: 192px;
+  position: unset;
+}
+.slides {
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.sec-section .swiper-button-prev {
+  left: 90px;
+}
+.sec-section .swiper-button-next {
+  right: 90px;
+}
+.left-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.name > :nth-child(1) {
+  font-size: 22px;
+  font-weight: 600;
+}
+.l-price {
+  font-size: 32px !important;
+  font-weight: bold;
+}
+
+.shopnow {
+  font-size: 9px;
+  border: 1px solid var(--black);
+  padding: 5px 10px;
+  width: max-content;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.shopnow:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  background-color: rgb(2, 2, 2);
+  color: white;
+}
+.slideimg {
+  transform: rotate(-20deg);
+  position: absolute !important;
+  right: 0 !important;
+  width: 40% !important;
+  height: 100% !important;
+  bottom: -20% !important;
+}
+@media screen and (max-width: 856px) {
+  .sec-section .swiper {
+    width: 90%;
+    height: 10rem;
+  }
+  .sec-section .swiper-button-prev,
+  .sec-section .swiper-button-next {
+    display: none;
+  }
+}
+@media screen and (max-width: 856px) {
+  .sec-section {
+    width: 90%;
+  }
+}
