@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import Logo from "../../assets/logo.png";
 import { BsFillCartCheckFill } from "react-icons/bs";
-import { GoThreeBars } from "react-icons/go";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   const [ShowMenue, setShowMenue] = useState(true);
@@ -17,7 +17,7 @@ const Header = () => {
       </div>
       <div className="right">
         <div className="menue-icon" onClick={toogleMenue}>
-          <GoThreeBars />
+          <FaBars />
         </div>
 
         <ul
